@@ -122,17 +122,17 @@ public class DashboardPanel
 		
 		JPanel tempPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 9));
 		JLabel logoLabel = new JLabel(new ImageIcon(
-			this.getClass().getClassLoader().getResource("images/btz_icon.png")));
+			this.getClass().getClassLoader().getResource("images/Zelcash_dashboard.png")));
 		tempPanel.add(logoLabel);
 		// TODO: use relative size
-		JLabel zcLabel = new JLabel("BitcoinZ Wallet ");
-		zcLabel.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 28));
+		JLabel zcLabel = new JLabel("Zelcash Wallet");
+		zcLabel.setFont(new Font("Helvetica", Font.BOLD | Font.ITALIC, 32));
 		tempPanel.add(zcLabel);
-		tempPanel.setToolTipText("Powered by BitcoinZ");
+		tempPanel.setToolTipText("Powered by Zelcash");
 		balanceStatusPanel.add(tempPanel, BorderLayout.WEST);
 		// TODO: use relative size - only!
 		JLabel transactionHeadingLabel = new JLabel(
-			"<html><span style=\"font-size:2em\"><br/></span>Transactions:</html>");
+			"<html><span style=\"font-size:2em\"><br/></span>Transaction History</html>");
 		tempPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 1, 1));
 		transactionHeadingLabel.setFont(new Font("Helvetica", Font.BOLD, 19));
 		tempPanel.add(transactionHeadingLabel);
@@ -389,7 +389,7 @@ public class DashboardPanel
 		}
 		
 		String text =
-			"<html><span style=\"font-weight:bold;color:#303030\">zcashd</span> status: " +
+			"<html><span style=\"font-weight:bold;color:#303030\">zelcashd</span> status: " +
 		    daemonStatus + ",  " + runtimeInfo + " <br/>" +
 			"Wallet: <span style=\"font-weight:bold;color:#303030\">" + walletDAT.getCanonicalPath() + "</span>" + 
 			walletEncryption + " <br/> " +
@@ -506,7 +506,7 @@ public class DashboardPanel
 			return;
 		}
 		
-		// Format double numbers - else sometimes we get exponential notation 1E-4 BTCZ
+		// Format double numbers - else sometimes we get exponential notation 1E-4 ZEL
 		DecimalFormat df = new DecimalFormat("########0.00######");
 		
 		String transparentBalance = df.format(balance.transparentBalance);
@@ -524,11 +524,11 @@ public class DashboardPanel
 		String text =
 			"<html>" + 
 		    "<span style=\"font-family:monospace;font-size:1em;" + color1 + "\">Transparent balance: <span style=\"font-size:1.1em;\">" + 
-				transparentUCBalance + " BTCZ </span></span><br/> " +
+				transparentUCBalance + " ZEL </span></span><br/> " +
 			"<span style=\"font-family:monospace;font-size:1em;" + color2 + "\">Private (Z) balance: <span style=\"font-weight:bold;font-size:1.1em;\">" + 
-		    	privateUCBalance + " BTCZ </span></span><br/> " +
+		    	privateUCBalance + " ZEL </span></span><br/> " +
 			"<span style=\"font-family:monospace;;font-size:1em;" + color3 + "\">Total (Z+T) balance: <span style=\"font-weight:bold;font-size:1.35em;\">" + 
-		    	totalUCBalance + " BTCZ </span></span>" +
+		    	totalUCBalance + " ZEL </span></span>" +
 			"<br/>  </html>";
 		
 		this.walletBalanceLabel.setText(text);
@@ -542,9 +542,9 @@ public class DashboardPanel
 					  "Unconfirmed (unspendable) balance is being shown due to an<br/>" + 
 		              "ongoing transaction! Actual confirmed (spendable) balance is:<br/>" +
 		              "<span style=\"font-size:5px\"><br/></span>" +
-					  "Transparent: " + transparentBalance + " BTCZ<br/>" +
-		              "Private ( Z ): <span style=\"font-weight:bold\">" + privateBalance + " BTCZ</span><br/>" +
-					  "Total ( Z+T ): <span style=\"font-weight:bold\">" + totalBalance + " BTCZ</span>" +
+					  "Transparent: " + transparentBalance + " ZEL<br/>" +
+		              "Private ( Z ): <span style=\"font-weight:bold\">" + privateBalance + " ZEL</span><br/>" +
+					  "Total ( Z+T ): <span style=\"font-weight:bold\">" + totalBalance + " ZEL</span>" +
 					  "</html>";
 		}
 		

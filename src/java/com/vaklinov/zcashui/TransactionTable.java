@@ -246,7 +246,7 @@ public class TransactionTable
 			JLabel infoLabel = new JLabel(
 					"<html><span style=\"font-size:0.97em;\">" +
 					"The table shows the information about the transaction with technical details as " +
-					"they appear at BitcoinZ network level." +
+					"they appear at Zelcash network level." +
 				    "</span>");
 			infoLabel.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
 			tempPanel.add(infoLabel, BorderLayout.CENTER);
