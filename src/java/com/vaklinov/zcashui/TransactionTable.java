@@ -127,7 +127,7 @@ public class TransactionTable
 						
 						Log.info("Transaction ID for block explorer is: " + txID);
 						// https://explorer.zcha.in/transactions/<ID>
-						String urlPrefix = "https://explorer.mybtczwallet.org/tx/";
+						String urlPrefix = "http://http://explorer.zel.cash/tx/";
 						if (installationObserver.isOnTestNet())
 						{
 							urlPrefix = "https://na";
