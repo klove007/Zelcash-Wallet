@@ -108,7 +108,7 @@ public class ZCashUI
     public ZCashUI(StartupProgressDialog progressDialog)
         throws IOException, InterruptedException, WalletCallException
     {
-        super("Zelcash Wallet 0.0.0.1");
+        super("Zelcash Wallet 0.0.0.2");
         
         if (progressDialog != null)
         {
