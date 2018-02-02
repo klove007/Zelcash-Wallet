@@ -705,6 +705,10 @@ public class ZCashUI
 			configOut.println("rpcuser=User" + getPassword(random));
 			configOut.println("rpcpassword=Pass" + getPassword(random));
 			configOut.println("");
+			configOut.println("addnode=node.zel.cash");
+			configOut.println("addnode=45.63.86.148");
+			configOut.println("addnode=199.247.8.181");
+			configOut.println("");
 
 			configOut.close();
 		}
