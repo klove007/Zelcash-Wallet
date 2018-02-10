@@ -37,7 +37,7 @@
     <property name="jar.dir"     value="${build.dir}/jars"/>
 	<property name="ubuntu.package.dir" value="${build.dir}/../zelcash-wallet-ubuntu"/>
 
-    <property name="main-class"  value="com.extra.zelcashui.ZelcashUI"/>
+    <property name="main-class"  value="com.vaklinov.zcashui.ZCashUI"/>
 
 	<path id="main-classpath">
 		<pathelement path="${basedir}/lib/bitcoinj-core-0.14.5.jar" />
